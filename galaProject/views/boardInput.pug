@@ -1,0 +1,75 @@
+﻿extends layout
+
+block content
+	ul
+		for user in results
+			
+			li
+				span 유저 아이디 : 
+				span= user.userId
+				span , 
+				span 유저 닉네임 : 
+				span= user.userNicName 
+				span , 
+				span 유저 토큰 : 
+				span= user.userToken
+				span , 
+				span 유저 사진 URL : 
+				span= user.userPicture
+
+	h1 it is table
+	p Welcome to boardInput.pug
+	form(method="post" action="/boards" enctype="multipart/form-data")
+		div
+			div
+				span 유저아이디(위 참조) :
+				div
+				input(type="text",name="boardUserId")
+			div
+				span 유저닉네임(위 참조):
+				div
+				input(type="text",name="boardUserNicName")
+			div
+				span 유저사진 URL(위 참조):
+				div
+				input(type="text",name="boardUserPicture")
+			div
+				span 카테고리(1~7까지 입력, 1부터 8까지 (7은 안됨)상현이형에게 물어보도록):
+				div
+				input(type="text",name="boardCategory")
+			div
+				span boardContent(보드 내용):
+				div
+				textarea(name="boardContent" rows="4" cols="50")
+			div
+				span boardisAnomynity(익명 여부로 0 OR 1):
+				div
+				input(type="text",name="boardIsAnomynity")
+			div
+				span boardTag(우선 제목이라고 생각, 배열 아님):
+				div
+				input(type="text",name="boardTag")
+			div
+				span boardLocationSub(지역 테이블중 로케이션서브 내용 중 정확히입력) ex.사당역:
+				div 
+					ul
+						locationSub 목록
+						for Sub in locationSub
+							li
+								span= Sub.locationSub
+				div
+				input(type="text",name="boardLocationSub")
+			div
+				span 경도(찾아서 넣자 ㅋㅋ) :
+				div
+				input(type="text",name="boardLong")
+			div
+				span 위도(찾아서 넣자 ㅋㅋ) :
+				div
+				input(type="text",name="boardLat")
+			div
+				span 사진 ㄱㄱㄱ:
+				div
+				input(type="file",name="boardContentPicture1")
+			div
+				input(type="submit",value="Send")

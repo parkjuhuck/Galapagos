@@ -1,0 +1,36 @@
+{
+  "name": "park",
+  "version": "1.0.0",
+  "description": "Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)\r  ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))",
+  "main": "app1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.1.4",
+    "aws-sdk": "^2.7.7",
+    "body-parser": "^1.15.2",
+    "date-format": "0.0.2",
+    "easyimage": "^2.1.0",
+    "express": "^4.14.0",
+    "express-formidable": "^1.0.0",
+    "fcm-push": "^1.1.2",
+    "format-date": "^1.0.0",
+    "gcm": "^1.0.1",
+    "moment": "^2.17.1",
+    "mongodb": "^2.2.12",
+    "mongoose": "^4.7.0",
+    "morgan": "^1.7.0",
+    "node-gcm": "^0.14.4",
+    "pug": "^2.0.0-beta6",
+    "randomstring": "^1.1.5",
+    "supervisor": "^0.12.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git clone https://parkjuhyck2@bitbucket.org/parkjuhyck2/galaproject.git"
+  }
+}
